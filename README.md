@@ -7,8 +7,8 @@ The application provides exercises that are short and require no equipment, whic
 
 This project is part of a university course (INFS3634) utilising Android Studio.
 
-Group 39
-Tasnia Ahmed
-Noor Virk
-Xiaoying Huang
+Group 39-
+Tasnia Ahmed,
+Noor Virk,
+Xiaoying Huang,
 Luke Tao
