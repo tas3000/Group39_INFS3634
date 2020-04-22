@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#56A9B1">
+
+    <ImageView
+        android:id="@+id/unswTimetable"
+        android:layout_width="390dp"
+        android:layout_height="683dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.911"
+        app:srcCompat="@drawable/unsw" />
+
+    <TextView
+        android:id="@+id/unswLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginRight="250dp"
+        android:layout_marginBottom="700dp"
+        android:text="UNSW Timetable"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toEndOf="@+id/unswTimetable"
+        app:layout_constraintTop_toBottomOf="@+id/unswTimetable"
+        app:layout_constraintVertical_bias="0.901" />
+
+    <Button
+        android:id="@+id/unswWebsiteButton"
+        android:layout_width="149dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginBottom="16dp"
+        android:background="#9F9999"
+        android:onClick="UNSW_Website"
+        android:text="UNSW Timetable"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.822"
+        app:layout_constraintStart_toEndOf="@+id/unswTimetable"
+        app:layout_constraintTop_toBottomOf="@+id/unswTimetable"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="UNSW Timetable" />
+
+    <Button
+        android:id="@+id/mapButton"
+        android:layout_width="72dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="600dp"
+        android:layout_marginRight="600dp"
+        android:layout_marginBottom="80dp"
+        android:background="#9F9999"
+        android:foreground="@android:drawable/ic_menu_mylocation"
+        android:textColor="#040404"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toEndOf="@+id/unswTimetable"
+        app:layout_constraintTop_toBottomOf="@+id/unswTimetable"
+        app:layout_constraintVertical_bias="0.492" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

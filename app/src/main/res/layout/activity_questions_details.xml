@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ED7853">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="350dp"
+            android:padding="10dp"
+            android:src="@drawable/returnbtn" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ED7853"
+                android:orientation="vertical"
+                android:paddingBottom="35dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:gravity="center"
+                    android:text="Results"
+                    android:textColor="@android:color/white"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_correct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="40sp"
+                        tools:text="6" />
+
+                    <TextView
+                        android:id="@+id/tv_line"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tv_correct"
+                        android:text="/"
+                        android:textColor="@android:color/white"
+                        android:textSize="40sp"
+                        tools:text="/" />
+
+                    <TextView
+                        android:id="@+id/tv_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tv_line"
+                        android:textColor="@android:color/white"
+                        android:textSize="40sp"
+                        tools:text="23" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Correct Answer"
+                    android:textColor="@android:color/white"
+                    android:textSize="23sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#ED7853">
+
+                <TextView
+                    android:id="@+id/tv_show_incorrect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical"
+                    android:text="incorrect"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginBottom="20dp"
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
