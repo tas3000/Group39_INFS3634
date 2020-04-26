@@ -65,17 +65,17 @@ public class QuestionsDetailsAdapter extends RecyclerView.Adapter<QuestionsDetai
             holder.mTvAnswer.setText("Mountain Climbers");
         } else if (s.equals(question3)) {
             holder.mTvAnswer.setText("Bicycle Crunches");
-        } else if (s.equals(question3)) {
+        } else if (s.equals(question4)) {
             holder.mTvAnswer.setText("Muscle located in the upper chest");
-        } else if (s.equals(question3)) {
+        } else if (s.equals(question5)) {
             holder.mTvAnswer.setText("Cardio");
-        } else if (s.equals(question3)) {
+        } else if (s.equals(question6)) {
             holder.mTvAnswer.setText("Arm Raises");
-        } else if (s.equals(question3)) {
+        } else if (s.equals(question7)) {
             holder.mTvAnswer.setText("A set is group of consecutive repetitions of an exercise");
-        } else if (s.equals(question3)) {
+        } else if (s.equals(question8)) {
             holder.mTvAnswer.setText("All of the above");
-        } else if (s.equals(question3)) {
+        } else if (s.equals(question9)) {
             holder.mTvAnswer.setText("Shoulder");
         }
 
